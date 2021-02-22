@@ -5,22 +5,19 @@
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
-struct box b1[10];
+
 void test_factorial_positive_num(void)
 {
-    long result = 1;
+    struct box b1[10];
+     struct box *ptr= NULL ;
+ ptr=(struct box*)calloc(10*sizeof(struct box));
+ ptr=b1;
+   
     TEST_ASSERT_EQUAL(1,insert(&b1,0,1,1,1,1,1,"red"));
     
 }
 int main()
 {
-
-
-
- 
- struct box *ptr= NULL ;
- ptr=(struct box*)calloc(10*sizeof(struct box));
- ptr=b1;
 
  int x=0;
  
