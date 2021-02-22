@@ -8,7 +8,7 @@ void tearDown(){}
 void test_factorial_positive_num(void)
 {
     long result = 1;
-    TEST_ASSERT_EQUAL(1,insert(&b1,x,1,1,1,1,1,"red"));
+    TEST_ASSERT_EQUAL(1,insert(&b1,0,1,1,1,1,1,"red"));
     
 }
 int main()
