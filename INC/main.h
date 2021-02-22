@@ -8,3 +8,4 @@ int insert(struct box *b2,int increment);
  float length,breadth,height,weight;
  char color[20];
 };
+int increment=0;
