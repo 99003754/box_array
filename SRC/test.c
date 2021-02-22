@@ -14,8 +14,9 @@ int i;
  ptr->height=1;
  ptr->weight=1;
  strcpy(ptr->color,"abcd");
+ int x=0;
  
- int x=insert(&b1);
+ x=insert(&b1,x);
  display(&b1,x);
  
  

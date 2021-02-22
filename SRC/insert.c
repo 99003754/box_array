@@ -1,5 +1,5 @@
 #include"main.h"
-int insert(struct box *b2)
+int insert(struct box *b2,int increment)
 {
  int n,i;
 printf("1");
@@ -10,6 +10,6 @@ printf("1");
  b2->height=1;
  b2->weight=1;
  strcpy(b2->color,"abcdefgh");
- n=1;
- return n;
+ increment++;
+ return increment;
 }
