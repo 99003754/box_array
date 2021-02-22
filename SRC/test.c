@@ -10,7 +10,7 @@ void test_factorial_positive_num(void)
 {
     struct box b1[10];
      struct box *ptr= NULL ;
- ptr=(struct box*)calloc(10*sizeof(struct box));
+ ptr=(struct box*)malloc(10*sizeof(struct box));
  ptr=b1;
    
     TEST_ASSERT_EQUAL(1,insert(&b1,0,1,1,1,1,1,"red"));
