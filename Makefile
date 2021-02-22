@@ -1,6 +1,6 @@
 PROJECT_NAME = box
-SRC = delete.c\
-diff_btw_min_max.c\
+SRC = src/test.c\
+src/insert.c\
 unity/unity.c
 
 INC =./unity
