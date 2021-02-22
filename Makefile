@@ -3,8 +3,7 @@ SRC = SRC/test.c\
 SRC/insert.c\
 unity/unity.c
 
-INC =INC/main.h\
-./unity
+INC =./unity
 
 $(PROJECT_NAME).out: $(SRC)
 	gcc $^ -I $(INC) -o $@
