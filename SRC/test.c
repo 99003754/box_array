@@ -1,23 +1,36 @@
 #include"main.h"
+#include "unity.h"
+
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+void test_factorial_positive_num(void)
+{
+    long result = 1;
+    TEST_ASSERT_EQUAL(SUCCESS,insert(&b1,x,1,1,1,1,1,"red"));
+    
+}
 int main()
 {
-int i;
+
 
 
  struct box b1[10];
  struct box *ptr= NULL ;
  ptr=(struct box*)malloc(10*sizeof(struct box));
  ptr=b1;
- ptr->unique_id=1;
- ptr->length=1;
- ptr->breadth=1;
- ptr->height=1;
- ptr->weight=1;
- strcpy(ptr->color,"abcd");
+
  int x=0;
  
- x=insert(&b1,x);
- display(&b1,x);
+// x=insert(&b1,x,1,1,1,1,1,"red");
+ //display(&b1,x);
+   UNITY_BEGIN();
+  
+  RUN_TEST(test_factorial_positive_num);
+  /* Close the Unity Test Framework */
+  return UNITY_END();
+ 
  
  
 
