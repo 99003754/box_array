@@ -7,15 +7,20 @@ void setUp(){}
 void tearDown(){}
 
 
-int main()
+int main(int argc, char *argv[])
 {
 struct box b1[10];
 struct box *ptr= NULL ;
 ptr=(struct box*)malloc(10*sizeof(struct box));
+if(ptr==NULL)
+{
+    printf("memoty not alllocated\n");
+    return;
+}
 ptr=b1;
- int x=0;
+int x=0;
  
- insert(&b1,x,1,1,1,1,1,"red");
+ insert(&ptr,0,1,1,1,1,1,"red");
  //display(&b1,x);
    UNITY_BEGIN();
   

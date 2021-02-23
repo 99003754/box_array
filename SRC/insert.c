@@ -15,5 +15,5 @@ int insert(struct box *b2,int increment,int update_id,float update_length,float 
  b2->weight=update_weight;
  strcpy(b2->color,update_color);
  increment++;
- return 1;
+ //return 1;
 }
