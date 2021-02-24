@@ -7,6 +7,7 @@
 
      for(i=0;i<x-1;i++)
      {
+         printf("i= %d id= %d\n",i,b2->unique_id);
          if(search_id==b2->unique_id)
          {
              //printf("\ngiven  id %d ");
@@ -19,7 +20,7 @@
 
          }
          else{
-             printf("\ngiven id %d not found   ",search_id);
+            // printf("\ngiven id %d not found   ",search_id);
              
          }
          b2++;

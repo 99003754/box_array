@@ -12,7 +12,7 @@ extern int increment;
  int color;
 };
 
-int insert(struct box *b2,int update_id,float update_length,float update_breadth,float update_height,float update_weight,int update_color);
+int insert(struct box *b2,int uid,float update_length,float update_breadth,float update_height,float update_weight,int update_color);
 int search(struct box *b2,int search_id);
 
 

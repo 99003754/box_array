@@ -8,16 +8,31 @@ void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
-void test_insert(void)
+void test_insert1(void)
 {
-    TEST_ASSERT_EQUAL(1,insert(&ptr,1,1,5,2,3,10));
-    TEST_ASSERT_EQUAL(1,insert(&ptr,2,2,5,3,2,11));
-    TEST_ASSERT_EQUAL(1,insert(&ptr,3,3,6,3,3,10));
+
+    TEST_ASSERT_EQUAL(1,insert(&ptr,3,2,5,3,2,11));
+
+}
+
+void test_insert3(void)
+{
+ 
     TEST_ASSERT_EQUAL(1,insert(&ptr,4,4,5,3,2,12));
+}
+void test_insert4(void)
+{
+
+    TEST_ASSERT_EQUAL(1,insert(&ptr,5,4,5,3,2,12));
+}
+void test_insert5(void)
+{
+
+    TEST_ASSERT_EQUAL(1,insert(&ptr,6,4,5,3,2,12));
 }
 void test_search(void)
 {
-    TEST_ASSERT_EQUAL(1,search(&ptr,1));
+    TEST_ASSERT_EQUAL(1,search(&ptr,4));
 
 }
 
@@ -39,7 +54,13 @@ ptr=b1;
  
    UNITY_BEGIN();
   
-  RUN_TEST(test_insert);
+  RUN_TEST(test_insert1);
+  //RUN_TEST(test_insert2);
+  RUN_TEST(test_insert3);
+  RUN_TEST(test_insert4);
+  RUN_TEST(test_insert5);
+
+
   RUN_TEST(test_search);
 
   //display(&ptr,increment);
