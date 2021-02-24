@@ -15,6 +15,11 @@ void test_insert(void)
     TEST_ASSERT_EQUAL(1,insert(&ptr,3,3,6,3,3,10));
     TEST_ASSERT_EQUAL(1,insert(&ptr,4,4,5,3,2,12));
 }
+void test_search(void)
+{
+    TEST_ASSERT_EQUAL(1,search(&ptr,3));
+
+}
 
 int main(int argc, char *argv[])
 {
@@ -35,7 +40,9 @@ ptr=b1;
    UNITY_BEGIN();
   
   RUN_TEST(test_insert);
-  display(&ptr,increment);
+  RUN_TEST(test_search);
+
+  //display(&ptr,increment);
   /* Close the Unity Test Framework */
   return UNITY_END();
  

@@ -1,9 +1,11 @@
  #include "main.h"
- int search(struct box *b2,int x,int search_id)
+ int increment;
+ int search(struct box *b2,int search_id)
  {
+    int x=increment;
      int i;
 
-     for(i=0;i<=x;i++)
+     for(i=0;i<x-1;i++)
      {
          if(search_id==b2->unique_id)
          {
@@ -13,13 +15,16 @@
              printf("Weight =%d",b2->weight );
              printf("Height =%d",b2->height );
              printf("Colour=%s",b2->color );
+             return 1;
 
          }
          else{
              printf("\ngiven id %d not found   ",search_id);
+             return 0;
          }
          b2++;
          
      }
+     return 3;
 
  }
