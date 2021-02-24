@@ -11,7 +11,7 @@
  printf("\nBreadth: %f",b2->breadth);
  printf("\nHeight: %f",b2->height);
  printf("\nWeight: %f",b2->weight);
- printf("\nColor: %s",b2->color);
+ printf("\nColor: %d",b2->color);
  b2++;
 
  }

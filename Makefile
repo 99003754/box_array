@@ -1,6 +1,7 @@
 PROJECT_NAME = box
 SRC = SRC/test.c\
 SRC/insert.c\
+SRC/display.c\
 unity/unity.c
 
 INC =./unity

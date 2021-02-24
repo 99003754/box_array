@@ -20,7 +20,8 @@ if(ptr==NULL)
 ptr=b1;
 int x=0;
  
- insert(&ptr,0,1,1,1,1,1,"red");
+ insert(&ptr,0,1,1,1,1,1,10);
+ display(&ptr,1);
  //display(&b1,x);
    UNITY_BEGIN();
   

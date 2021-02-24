@@ -1,5 +1,5 @@
 #include"main.h"
-int insert(struct box *b2,int increment,int update_id,float update_length,float update_breadth,float update_height,float update_weight,char update_color[20])
+int insert(struct box *b2,int increment,int update_id,float update_length,float update_breadth,float update_height,float update_weight,int update_color)
 {
  if(increment==0)
  {
@@ -13,7 +13,7 @@ int insert(struct box *b2,int increment,int update_id,float update_length,float 
  b2->breadth=update_breadth;
  b2->height=update_height;
  b2->weight=update_weight;
- strcpy(b2->color,update_color);
+ b2->color=update_color;
  increment++;
  //return 1;
 }
