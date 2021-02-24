@@ -1,16 +1,25 @@
 #include"main.h"
 #include "unity.h"
-
+struct box b1[10];
+struct box *ptr= NULL;
+int increment;
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
+void test_insert(void)
+{
+    TEST_ASSERT_EQUAL(1,insert(&ptr,1,1,5,2,3,10));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,2,2,5,3,2,11));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,3,3,6,3,3,10));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,4,4,5,3,2,12));
+}
 
 int main(int argc, char *argv[])
 {
-struct box b1[10];
-struct box *ptr= NULL ;
+ 
+increment=0;
 ptr=(struct box*)malloc(10*sizeof(struct box));
 if(ptr==NULL)
 {
@@ -18,14 +27,15 @@ if(ptr==NULL)
     return;
 }
 ptr=b1;
-int x=0;
+
  
- insert(&ptr,0,1,1,1,1,1,10);
- display(&ptr,1);
- //display(&b1,x);
+ //insert(&ptr,0,1,1,1,1,1,10);
+ //display(&ptr,1);
+ 
    UNITY_BEGIN();
   
-  
+  RUN_TEST(test_insert);
+  display(&ptr,increment);
   /* Close the Unity Test Framework */
   return UNITY_END();
  
