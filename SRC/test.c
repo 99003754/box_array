@@ -17,7 +17,7 @@ void test_insert(void)
 }
 void test_search(void)
 {
-    TEST_ASSERT_EQUAL(1,search(&ptr,3));
+    TEST_ASSERT_EQUAL(1,search(&ptr,1));
 
 }
 
