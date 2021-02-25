@@ -18,12 +18,13 @@ void test_insert1(void)
 void test_insert3(void)
 {
  
-    TEST_ASSERT_EQUAL(1,insert(&ptr,4,1.0,5.0,3,2,12));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,4,1,5,5,2,12));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,4,1.0,5,3,2,12));
 }
 void test_insert4(void)
 {
 
-    TEST_ASSERT_EQUAL(1,insert(&ptr,5,4,5,3,2,12));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,5,4,5,4,2,12));
 }
 void test_insert5(void)
 {
@@ -36,6 +37,15 @@ void test_search(void)
 
 }
 
+void test_max_height(void)
+{
+    TEST_ASSERT_EQUAL(5,max_height(&ptr));
+}
+
+void test_specific_color(void)
+{
+    TEST_ASSERT_EQUAL(5,specific_color(&ptr,11));
+}
 int main(int argc, char *argv[])
 {
  

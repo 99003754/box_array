@@ -1,10 +1,10 @@
 #include "main.h"
-
-int specific_color(struct box *ptr,char *Spec_Color)
+int increment;
+int specific_color(struct box *ptr,int Spec_Color)
 {
 int count = 0;
-    
-for(int k=0;k<=noOfRecords;k++)
+    int x = increment;
+for(int k=0;k<=x-1;k++)
 { 
     if(!strcmp(ptr->color,Spec_Color))
         {

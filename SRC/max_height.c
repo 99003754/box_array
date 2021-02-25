@@ -1,9 +1,10 @@
 #include "main.h"
-
+int increment;
 float max_height(struct box *ptr)
 {
+   int x = increment;
 float max=ptr->height;
-for(int k=0;k<=noOfRecords;k++)
+for(int k=0;k<=x-1;k++)
 {
     if((ptr->height) > max)
     {
@@ -11,6 +12,6 @@ for(int k=0;k<=noOfRecords;k++)
     }
     ptr++;
     }
-    printf("%f",max);
+    return max;
 }
 }
