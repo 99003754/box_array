@@ -41,12 +41,12 @@ void test_max_height(void)
 {
     TEST_ASSERT_EQUAL(5,max_height(&ptr));
 }
-
+/*
 void test_update_weight(void)
 {
     TEST_ASSERT_EQUAL(1,change_weight(&ptr,2,25));
 }
-
+*/
 void test_specific_color(void)
 {
     TEST_ASSERT_EQUAL(5,specific_color(&ptr,11));
@@ -73,7 +73,7 @@ ptr=b1;
   RUN_TEST(test_insert3);
   RUN_TEST(test_insert4);
   RUN_TEST(test_insert5);
-  RUN_TEST(test_update_weight);
+  //RUN_TEST(test_update_weight);
 RUN_TEST(test_max_height);
 RUN_TEST(test_specific_color);
   RUN_TEST(test_search);

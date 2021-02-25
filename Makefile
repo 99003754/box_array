@@ -3,6 +3,8 @@ SRC = SRC/test.c\
 SRC/insert.c\
 SRC/display.c\
 SRC/search.c\
+SRC/max_height.c\
+SRC/specific_color.c\
 unity/unity.c
 
 INC =./unity
