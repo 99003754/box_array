@@ -70,12 +70,12 @@ ptr=b1;
    UNITY_BEGIN();
   
   RUN_TEST(test_insert1);
-  
   RUN_TEST(test_insert3);
   RUN_TEST(test_insert4);
   RUN_TEST(test_insert5);
   RUN_TEST(test_update_weight);
-
+RUN_TEST(test_max_height);
+RUN_TEST(test_specific_color);
   RUN_TEST(test_search);
 
   display(&ptr,increment);
