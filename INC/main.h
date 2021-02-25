@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-extern int increment;
+//extern int increment;
 
  struct box{
  int unique_id;

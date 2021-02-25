@@ -55,7 +55,7 @@ ptr=b1;
    UNITY_BEGIN();
   
   RUN_TEST(test_insert1);
-  //RUN_TEST(test_insert2);
+  
   RUN_TEST(test_insert3);
   RUN_TEST(test_insert4);
   RUN_TEST(test_insert5);

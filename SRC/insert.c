@@ -1,17 +1,17 @@
 #include"main.h"
-int increment;
+int increment=0;
 int insert(struct box *b2,int uid,float update_length,float update_breadth,float update_height,float update_weight,int update_color)
 {
-//printf("increment %d\n",increment);
+printf("increment %d\n",increment);
  if(increment==0)
  {
    
- }
+}
  else
  {
      //printf("here\n");
   b2=b2+increment;
-  //printf("inc %d\n",increment);
+  printf("inc %d\n",increment);
   
  }
  

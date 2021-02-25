@@ -1,5 +1,5 @@
  #include "main.h"
- int increment;
+ extern int increment;
  int search(struct box *b2,int search_id)
  {
     int x=increment;
