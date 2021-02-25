@@ -5,6 +5,7 @@ int insert(struct box *b2,int uid,float update_length,float update_breadth,float
 //printf("increment %d\n",increment);
  if(increment==0)
  {
+   
  }
  else
  {
@@ -19,7 +20,7 @@ int insert(struct box *b2,int uid,float update_length,float update_breadth,float
  
  b2->length=update_length;
   printf("inc %d\n",increment);
-//b2->unique_id=uid;
+ b2->unique_id=uid;
  b2->breadth=update_breadth;
  
  b2->height=update_height;

@@ -18,7 +18,7 @@ void test_insert1(void)
 void test_insert3(void)
 {
  
-    TEST_ASSERT_EQUAL(1,insert(&ptr,4,4,5,3,2,12));
+    TEST_ASSERT_EQUAL(1,insert(&ptr,4,1,5,3,2,12));
 }
 void test_insert4(void)
 {
@@ -43,7 +43,7 @@ increment=0;
 ptr=(struct box*)malloc(10*sizeof(struct box));
 if(ptr==NULL)
 {
-    printf("memoty not alllocated\n");
+    printf("memory not alllocated\n");
     return;
 }
 ptr=b1;
