@@ -73,9 +73,15 @@ ptr=b1;
   RUN_TEST(test_insert3);
   RUN_TEST(test_insert4);
   RUN_TEST(test_insert5);
+<<<<<<< HEAD
   //RUN_TEST(test_update_weight);
 RUN_TEST(test_max_height);
 RUN_TEST(test_specific_color);
+=======
+  RUN_TEST(test_update_weight);
+  RUN_TEST(test_max_height);
+  RUN_TEST(test_specific_color);
+>>>>>>> 7e2f5c967dbec8ce40b2ef6db7327fdf5fbb33e0
   RUN_TEST(test_search);
 
   display(&ptr,increment);
