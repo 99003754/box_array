@@ -1,8 +1,10 @@
  #include"main.h"
+ extern int increment;
  int display(struct box *b2,int x)
  {
  int i;
- for(i=0;i<x-1;i++)
+
+ for(i=0;i<x;i++)
  {
 
  printf("\n--------RECORD %d---------",i+1);
